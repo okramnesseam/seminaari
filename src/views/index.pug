@@ -8,9 +8,8 @@ Doctype html
         h1#myHeading Helsingin kaupungin viikon tapahtumat
         p.firstParagraph Tämä webbisovellus näyttää sinulle Helsingin kaupungin tapahtumat seuraavalta seitsemältä vuorokaudelta, tiedot haetaan Helsingin kaupungin API:sta.
 
-
-         div #{data}
-
-        //- each event in events
-        //- ul
-        //-   li= event.name
+    
+       
+        ul
+          each val in filtered
+            li= JSON.stringify(val.name.fi)

@@ -16,7 +16,7 @@ app.set('views', './src/views')
      let { min_date, max_date } = req.query;
      let dateFilter = createEventDateFilter(min_date, max_date);
      let filtered = events.filter(dateFilter);
-        res.json(filtered)
+        // res.json(filtered)
     //  const data = filtered
         res.render("index", { filtered })
  })
